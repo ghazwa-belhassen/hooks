@@ -1,15 +1,26 @@
 import React from "react";
+import { Link, useHref } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <div className="navigation">
       <h1>MovieMuse</h1>
       <ul>
-        <li>Home</li>
-        <li>Movies</li>
-        <li>series</li>
-        <li>anime</li>
-        <li>contact</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/Movies">Movies</Link>
+        </li>
+        <li>
+          <Link to="/Series"> series</Link>
+        </li>
+        <li>
+          <Link to="/anime">anime</Link>
+        </li>
+        <li>
+        contact
+        </li>
       </ul>
       <div className="action">
         <svg
